@@ -9,7 +9,7 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    background: #f0f0f0;
+    background: white;
     color: #000000;
     padding: 8px;
     display: flex;
@@ -18,6 +18,8 @@ body{
     width: 100%;
     height: 100px;
     transition: height 0.5s ease;
+    z-index: 1000;
+
 }
 
 .header.pequeno{
@@ -65,40 +67,63 @@ nav a{
 
 nav a:hover{
     text-decoration: underline;
-    background-color: #FFC72C;
+    background-color: #5ec026;
     color:#000000;
-    border-radius: 20px;
+    border-radius: 12px;
 
 }
-        
-.container{
-    display: flex;
-    gap: 20px;
-    padding: 20px;
-    background-color: #f0ecec;
-    padding:20px;
-}
-
 .hero {
+    position: absolute;
     margin: 0;
-    margin-top: 80px;
+    top: 0; 
     background-color: black;
     height: 350px;
-    padding: 50px 20px;
+    padding: 10px 20px;
     width: 100%;
     margin-left: 10px;
     margin-right: 10px;
+    align-items: center;      
+    text-align: center;   
 }
 
-.hero h1 {
-    color: #fff;
-    font-size: 55px;
-    margin-bottom: 5px;
-    margin-top: 50px;
+.hero video {
+    margin-top: 0;
+    position: relative;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 0;
 }
 
-.hero p {
-    color: #fff;
-    font-size: 20px;
-    margin-left: 10px;
+.hero h1{
+    top: 120px;
+    position: relative;
+    color : #ffffff;
+    font-size: 70px;
+    z-index: 1;
+    margin-bottom: 2px;
+}
+.hero h2{
+    margin-top: 0;
+    margin-bottom: 0;
+    top: 125px;
+    position: relative;
+    color : #ffffff;
+    font-size: 30px;
+    z-index: 1;
+}
+
+.container{
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            background-color: #f0ecec;
+            padding:20px;
+}
+
+main{
+    margin-top: 1100px;
+    width: 100%;
+    height: 600px;   
 }
