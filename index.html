@@ -7,53 +7,30 @@
     <link rel="icon" type="image/png" href="assets/favicon/faviconnnn.jpg">
     <link rel="stylesheet" href="css/style.css">
 
-    <style>
-        /* Estilos para o vídeo de fundo */
-        .video-fundo {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -1; /* Coloca o vídeo atrás do conteúdo */
-        }
-
-        /* Estilos para o conteúdo sobre o vídeo */
-        .hero {
-            position: relative;
-            z-index: 1; /* Coloca o conteúdo acima do vídeo */
-            color: white;
-            text-align: center;
-            padding-top: 20vh; /* Ajuste conforme necessário */
-        }
-
-        .footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: relative;
-            z-index: 1; /* Coloca o rodapé acima do vídeo */
-        }
-        </style>
 </head>
 <body>
+    <aside id="aside">
+        <div id="btnCloseAside" class="btnCloseAside">X</div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contactos">Contactos</a></li>
+            </ul>
+        </nav>
+
+    </aside>
     <header  class="header">
         <div class="logo-container">
             <img src="assets/images/logo2.jpg" alt="logo" class="txtheader">
             <h1 class="txtheader titulo">Eco Mobile</h1>
         </div>
-        <nav>
-        <ul class="botao">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#">teste</a></li>
-            <li><a href="#">teste</a></li>
-            <li><a href="#">teste</a></li>
-            <li><a href="#">teste</a></li>
-            <li><a href="#">teste</a></li>
-        </ul>
-        </nav>
+        <div id="btnAside" >
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </header>
     <div class="hero" id="inicio">
         <h1>Eco Mobile</h1>
