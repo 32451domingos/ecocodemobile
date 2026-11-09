@@ -7,3 +7,9 @@ window.addEventListener("scroll", () => {
     header.classList.remove("pequeno");
   }
 });
+
+const btnAside = document.getElementById("btnAside");
+
+btnAside.addEventListener("click", () => {
+  btnAside.style.display = "none";
+});

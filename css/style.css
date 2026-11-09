@@ -25,7 +25,7 @@ body{
     height: 100px;
     padding: 8px 3%;
     transition: height 0.5s ease;
-    z-index: 1000;
+    z-index: 500;
     box-sizing: border-box;
 
 }
@@ -33,14 +33,19 @@ body{
 .header.pequeno{
     height: 50px;
     transition: height 0.5s ease;
+    z-index: 1000;
 
 }
 
-.header.pequeno .logo-container img{
-    width: 50px;
-    height: auto;
-    transition: width 0.5s ease, height 0.5s ease;
-}
+aside {
+            position:fixed;
+            top: 0;
+            right: 0;
+            width: 20%;
+            height: 100vh;
+            background: rgba(8, 8, 11, 0.9);
+            z-index: 2000;
+        }
 
 .txtheader{
     margin-left: 20px;
@@ -55,30 +60,23 @@ header img {
     width: 70px;
     height: auto;
     transition: width 0.5s ease, height 0.5s ease;
-    }
-nav ul{
-    align-items: center;
-    list-style: none;
-    display: flex;
-    gap: 10px;
+}   
+
+.header.pequeno .logo-container img{
+    width: 50px;
+    height: auto;
+    transition: width 0.5s ease, height 0.5s ease;
 }
-nav a{
-    font-size: 15px;
-    color: black;
-    margin-left: 20px;
-    align-items: center;  
-    text-decoration: none;
-    padding: 20px;
-    transition: 1.6s ease;
-    margin-right: 20px;
+.btnAside{
+    width: 70px;
+    height: auto;
+    transition: width 0.5s ease, height 0.5s ease;
 }
 
-nav a:hover{
-    text-decoration: underline;
-    background-color: #5ec026;
-    color:#000000;
-    border-radius: 12px;
-
+.pequeno img{
+    width: 30px;
+    height: auto;
+    transition: width 0.5s ease, height 0.5s ease;
 }
 .hero {
     margin-top: 100px;
