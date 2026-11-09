@@ -15,9 +15,7 @@ const btnCloseAside = document.getElementById("btnCloseAside");
  function toggleAside(){
   if(activeAside){
     btnAside.style.display = "none";
-    aside.style.width = 0;
     aside.style.display = "flex";
-    aside.style.width = "250px";
   }
   else{
     btnAside.style.display = "flex";
