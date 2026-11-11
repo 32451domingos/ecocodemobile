@@ -34,3 +34,37 @@ btnCloseAside.addEventListener("click", () => {
   activeAside = false;
   toggleAside();
 });
+
+const cookies = document.getElementById("cookies");
+const btnAcceptCookies = document.getElementById("btnAcceptCookies");
+const btnDeclineCookies = document.getElementById("btnDeclineCookies");
+const fundoCookies = document.getElementById("fundoCookies");
+const cookieAceito = document.getElementById("cookieAceito");
+const cookieNegado = document.getElementById("cookieNegado");
+
+
+let aceitouCookies = false;
+
+function fcookies(){
+  cookies.style.display = "none";
+  fundoCookies.style.display = "none";
+  if(aceitouCookies){
+    cookieAceito.style.display = "block";
+    setTimeout(() => {
+      cookieAceito.style.display = "none";
+    }, 2000);
+  }
+  else{
+    cookieNegado.style.display = "block";
+    setTimeout(() => {
+      cookieNegado.style.display = "none";
+    }, 2000);
+  }
+};
+btnAcceptCookies.addEventListener("click", () => {
+  fcookies();
+});
+
+btnDeclineCookies.addEventListener("click", () => {
+  fcookies();
+}); 
