@@ -45,6 +45,14 @@ const cookieNegado = document.getElementById("cookieNegado");
 
 let aceitouCookies = false;
 
+let escolha = localStorage.getItem("cookies");
+
+if (escolha === "aceite" || escolha === "recusado") {
+  document.getElementById("cookies").style.display = "none";
+  document.getElementById("fundoCookies").style.display = "none";
+}
+
+
 function fcookies(){
   cookies.style.display = "none";
   fundoCookies.style.display = "none";
@@ -53,12 +61,14 @@ function fcookies(){
     setTimeout(() => {
       cookieAceito.style.display = "none";
     }, 2000);
+    localStorage.setItem("cookies", "aceite");
   }
   else{
     cookieNegado.style.display = "block";
     setTimeout(() => {
       cookieNegado.style.display = "none";
     }, 2000);
+    localStorage.setItem("cookies", "recusado");
   }
 };
 btnAcceptCookies.addEventListener("click", () => {
