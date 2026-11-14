@@ -55,17 +55,9 @@ function fcookies(){
   cookies.classList.add("fechado");
   document.getElementById("fundoCookies").style.display = "none";
   if(aceitouCookies){
-    cookieAceito.style.display = "block";
-    setTimeout(() => {
-      cookieAceito.style.display = "none";
-    }, 2000);
     localStorage.setItem("cookies", "aceite");
-  }
+  } 
   else{
-    cookieNegado.style.display = "block";
-    setTimeout(() => {
-      cookieNegado.style.display = "none";
-    }, 2000);
     localStorage.setItem("cookies", "recusado");
   }
 };
