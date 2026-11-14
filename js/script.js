@@ -13,15 +13,13 @@ const btnCloseAside = document.getElementById("btnCloseAside");
  let activeAside = false;
 
  function toggleAside(){
-  if(activeAside){
-    btnAside.style.display = "none";
-    aside.style.display = "flex";
-  }
-  else{
-    btnAside.style.display = "flex";
-    aside.style.display = "none";
-  }
- }
+    if(activeAside){
+        aside.classList.add("aberto");
+    }
+    else{
+        aside.classList.remove("aberto");
+    }
+}
 
 
 
@@ -47,15 +45,15 @@ let aceitouCookies = false;
 
 let escolha = localStorage.getItem("cookies");
 
-if (escolha === "aceite" || escolha === "recusado") {
-  document.getElementById("cookies").style.display = "none";
-  document.getElementById("fundoCookies").style.display = "none";
+if (escolha==="aceite"||escolha==="recusado") {
+    cookies.classList.add("fechado");
+    document.getElementById("fundoCookies").style.display = "none";
 }
 
 
 function fcookies(){
-  cookies.style.display = "none";
-  fundoCookies.style.display = "none";
+  cookies.classList.add("fechado");
+  document.getElementById("fundoCookies").style.display = "none";
   if(aceitouCookies){
     cookieAceito.style.display = "block";
     setTimeout(() => {
