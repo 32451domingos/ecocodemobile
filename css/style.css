@@ -59,6 +59,7 @@ h1{
 }
 
 .logo-container {
+    margin-left: 20px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -68,10 +69,6 @@ h1{
     width: 40px;
     height: auto;
     transition: width 0.5s ease, height 0.5s ease;
-}
-
-.txtheader{
-    margin-left: 20px;
 }
         
 a{
@@ -97,7 +94,7 @@ header img {
 
 #btnAside {
     position: relative;
-    transition: width 0.5s ease, height 0.5s ease, background-color 0.5s ease;
+    transition: all 0.5s ease;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -112,14 +109,10 @@ header img {
     font-size: 10px;
 }
 
-#btnAside:hover .msg {
-    opacity: 50%;
-    visibility: visible;
-}
 
 #btnAside:hover {
     background-color: #b4acac;
-    transition: background-color 1s ease;
+    transition: all 0.5s ease;
     cursor: pointer;   
 }
 .bar {
@@ -254,7 +247,7 @@ nav a:hover {
     color: white;
     font-size: 30px;
     margin-bottom: 25px;
-    transition: all 1s ease;
+    transition: all 0.3s ease;
 }
 
 .hero h2.aparecer{
@@ -469,7 +462,7 @@ main ol{
 }
 
 .quadro h2{
-    font-size: 40px;
+    font-size: 25px;
     padding-top: 120px;
     color: black;
     padding-bottom: 10px;
@@ -477,8 +470,9 @@ main ol{
 }
 
 .quadro p{
-    font-size: 25px;
+    font-size: 20px;
     color: black;
+    margin: 10px 30px;
 }
 
 .quadro{
@@ -506,3 +500,30 @@ main ol{
     top: 10px;
 }
 
+.btnTopo{
+    opacity: 0;
+    visibility:hidden;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    background-color: white;
+    padding: 10px;
+    z-index: 5000;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: -2px 0 5px rgba(5, 5, 5, 0.5);
+    border: 2px solid #39E75F;
+    color: black;
+    transition: all 2s;
+}
+
+.btnTopo.aparecer{
+    opacity: 1;
+    visibility:visible;
+} 
+
+.btnTopo:hover{
+    padding: 15px 10px;
+    background-color: #b4acac;
+    transition: all 2s;
+}

@@ -1,16 +1,20 @@
 const header = document.querySelector(".header");
+const btnTopo = document.getElementById("btnTopo");
 
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 50) {
+    btnTopo.classList.add("aparecer")
     header.classList.add("pequeno");
   } else {
     header.classList.remove("pequeno");
+    btnTopo.classList.remove("aparecer")
   }
 });
 const btnAside = document.getElementById("btnAside");
 const aside = document.getElementById("aside");
 const btnCloseAside = document.getElementById("btnCloseAside");
+
  let activeAside = false;
 
  function toggleAside(){
@@ -21,8 +25,6 @@ const btnCloseAside = document.getElementById("btnCloseAside");
         aside.classList.remove("aberto");
     }
 }
-
-
 
 btnAside.addEventListener("click", () => {
   activeAside = true;
