@@ -440,3 +440,13 @@ main ol{
     padding-left: 20px;
 }
 
+.objetivos{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 40px;
+    margin-top: 10px;
+    padding: 20px;  
+}
+
+
