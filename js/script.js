@@ -68,3 +68,29 @@ btnAcceptCookies.addEventListener("click", () => {
 btnDeclineCookies.addEventListener("click", () => {
   fcookies();
 }); 
+
+
+const txt = [];
+
+txt[1] = document.getElementById("txt1");
+txt[2] = document.getElementById("txt2");
+txt[3] = document.getElementById("txt3");
+
+
+txt[1].classList.add("aparecer");
+let i=1;
+let y;
+function rotacaotxt(){
+  if(i===1)
+    y=3;
+  else
+    y=i-1;
+  txt[y].classList.remove("aparecer");
+  txt[i].classList.add("aparecer");
+  if(i===3) 
+    i=1;
+  else
+    i++;
+}
+
+setInterval(rotacaotxt,5000);

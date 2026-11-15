@@ -208,10 +208,8 @@ nav a {
     font-size: 16px;
     font-weight: 600;
     text-decoration: none;
-
     border-radius: 10px;
     border-left: 4px solid transparent;
-
     transition: all 0.3s ease;
 }
 
@@ -224,6 +222,7 @@ nav a:hover {
 }
 
 .hero {
+    position: relative;
     margin-top: 100px;
     background-color: black;
     min-height: 650px;
@@ -244,10 +243,24 @@ nav a:hover {
     margin-bottom: 10px;
 }
 .hero h2 {
+    position: absolute;
+    bottom: 10;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
     color: white;
     font-size: 30px;
     margin-bottom: 25px;
+    transition: all 1s ease;
 }
+
+.hero h2.aparecer{
+    opacity: 1;
+    visibility:visible;
+    transition: all 0.3s ease;
+}
+
 .container{
     display: flex;
     gap: 20px;
