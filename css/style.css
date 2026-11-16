@@ -390,9 +390,9 @@ main h1{
 
 .cookies {
     position: fixed;
-    bottom: 10px;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, 0);  
+    transform: translate(-50%, -50%);  
     background-color: #080D09;
     color: #FFFFFF;
     padding: 15px;
@@ -428,6 +428,7 @@ main h1{
 
 .cookies button.two {
     border: 2px solid #39E75F;
+    margin-right: 10px;
 }
 
 .cookies button.one:hover {
@@ -441,18 +442,18 @@ main h1{
 }
 
 .cookies h1 {
-    font-size: 25px;
+    font-size: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
-    color: black;
-    -webkit-text-stroke: 1px #39E75F;
 }
 
 .cookies h2 {
+    margin: 0 60px;
     font-size: 18px;
     margin-top: 10px;
     margin-bottom: 10px;
     color: #E5E7EB;
+
 }
 
 .cookies p {
