@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    scroll-margin-top: 120px;
+    scroll-margin-top:85px;
     scroll-behavior: smooth;
 }
 
@@ -59,7 +59,6 @@ h1{
 }
 
 .logo-container {
-    margin-left: 20px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -92,7 +91,7 @@ header img {
     height: 31px;
 }
 
-#btnAside {
+.btnAside {
     position: relative;
     transition: all 0.5s ease;
     display: flex;
@@ -102,13 +101,8 @@ header img {
     border-radius: 8px;
     padding: 6px;
     cursor: pointer;
+    margin-right: 5px;
 }
-
-
-.header.pequeno div .msg{
-    font-size: 10px;
-}
-
 
 #btnAside:hover {
     background-color: #b4acac;
@@ -142,6 +136,17 @@ aside.aberto {
     opacity: 1;
     visibility: visible;
     transition: transform 0.4s ease, opacity 0.4s ease, visibility 0s ease;
+}
+
+.fundoAside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 1999;
+    display: none;
 }
 
 .btnCloseAside {
@@ -217,37 +222,52 @@ nav a:hover {
 }
 
 .hero {
-    position: relative;
-    margin-top: 100px;
     background-color: black;
-    min-height: 650px;
+    height: 100vh;
     width: 100%;
-    padding: 30px 20px;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: url(assets/video/fundo.mp4);
 }
 
-.hero video {
+.hero video{
+    margin-top: 10vh;
+    height: 90vh;
     width: 100%;
-    height: auto;
-    display: block;
 }
 
 .hero h1 {
-    color: white;
+    white-space: nowrap;
+    position: absolute;
+    top: 30px;
+    color: black;
     font-size: 70px;
     margin-bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .hero h2 {
+    top: 60%;
     position: absolute;
     bottom: 10;
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
     visibility: hidden;
-    color: white;
+    color: black;
     font-size: 30px;
     margin-bottom: 25px;
     transition: all 0.3s ease;
+}
+.hero .fundo{
+    position: absolute;
+
+    background-color: rgba(241, 234, 234, 0.5);
+    width: 550px;
+    height: 200px;
+    border-radius: 30px;
 }
 
 .hero h2.aparecer{
@@ -274,6 +294,10 @@ main {
     flex-direction: column;
 }
 
+.comoParticipar{
+    width: 100%;
+    height: 100vh;
+}
 
 .passos {
     display: flex;
@@ -282,14 +306,39 @@ main {
     gap: 20px;
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
 }
 
-main h2{
+.passo{
+    position: relative;
+    width: 320px;
+    height: 320px;
+    background: black;
+    border-radius: 40px;
+    border: #39E75F solid 4px;
+}
+
+.numero{
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    background: #39E75F;
+    width: 50px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    padding-right: 10px;
+    padding-top: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+main h1{
     color: white;
     text-align: center;
     margin-bottom: 20px;
     font-size: 50px;
-    margin-top: 10px;
+    margin-top: 87px;
 }
 
 .passos img {
@@ -488,11 +537,7 @@ main ol{
 }
 
 .quadrado h1{
-    text-align: center;
-    font-size: 66px;
-    margin: 20px;
-    margin-top: 25px;
-
+    color: black;
 }
 
 .quadro span{
@@ -531,6 +576,7 @@ main ol{
     transition: all 2s;
 }
 
+
 .data h1{
 color: #ffffff;
 text-align: center;
@@ -544,6 +590,11 @@ padding: 10px;
 
 }
 
+.data h2{
+    color: white;
+    text-align: center;
+}
+
 .data h2 span{
-    font-size: 25px;
+    font-size: 30px;
 }

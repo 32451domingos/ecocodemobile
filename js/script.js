@@ -19,10 +19,12 @@ const btnCloseAside = document.getElementById("btnCloseAside");
 
  function toggleAside(){
     if(activeAside){
-        aside.classList.add("aberto");
+      document.getElementById("fundoAside").style.display = "block";
+      aside.classList.add("aberto");
     }
     else{
-        aside.classList.remove("aberto");
+      document.getElementById("fundoAside").style.display = "none ";
+      aside.classList.remove("aberto");
     }
 }
 
