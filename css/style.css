@@ -462,33 +462,48 @@ main ol{
 }
 
 .quadro h2{
+    color: white;
     font-size: 25px;
     padding-top: 120px;
-    color: black;
     padding-bottom: 10px;
     font-weight: bold;
 }
 
 .quadro p{
+    color: white;
     font-size: 20px;
-    color: black;
     margin: 10px 30px;
 }
 
 .quadro{
     position: relative;
+    background-color: black;
     border-radius: 20px;
-    border: #000000 solid   ;
+    border: 2px #39E75F solid ;
     flex: 2;
-    margin: 20px;
     box-shadow: -2px 0 5px rgba(5, 5, 5, 0.5);
+    transition: all ;
+    margin-bottom: 20px;
+}
+
+.quadro.colunaA{
+    margin-left: 100px;
+    margin-right: 20px;
+}
+
+.quadro.colunaB{
+    margin-right: 100px;
+}
+
+.quadro.linhaB{
+    margin-bottom: 40px;    
 }
 
 .quadrado h1{
     text-align: center;
-    font-size: 50px;
+    font-size: 66px;
     margin: 20px;
-    margin-top: 40px;
+    margin-top: 25px;
 
 }
 
