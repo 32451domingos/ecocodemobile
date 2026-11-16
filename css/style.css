@@ -474,7 +474,7 @@ main p{
     text-align: center;
     margin-bottom: 20px;
     font-size: 40px;
-    margin-top: 10px;
+    margin-top: 86px;
 }
 
 main ol{
@@ -495,21 +495,26 @@ main ol{
 .quadrado{
     background-color: white;
     border-radius: 20px;
-    border: #000000 solid   ;
+    border: #000000 solid;
+    width: 100%;
+    height: 200vh;
+    text-align: center;
 }
 
 .quadro h2{
     color: white;
     font-size: 25px;
-    padding-top: 120px;
-    padding-bottom: 10px;
+    padding-top: 150px;
+    padding-bottom: 20px;
     font-weight: bold;
+
 }
 
 .quadro p{
     color: white;
     font-size: 20px;
-    margin: 10px 30px;
+    margin: 10px 70px;
+    margin-top: 40px;
 }
 
 .quadro{
@@ -521,6 +526,7 @@ main ol{
     box-shadow: -2px 0 5px rgba(5, 5, 5, 0.5);
     transition: all ;
     margin-bottom: 20px;
+    height: 400px;
 }
 
 .quadro.colunaA{
@@ -533,10 +539,12 @@ main ol{
 }
 
 .quadro.linhaB{
-    margin-bottom: 40px;    
+    margin-bottom: 40px; 
+    margin-top: 100px;  
 }
 
 .quadrado h1{
+    margin-bottom: 100px;
     color: black;
 }
 
@@ -576,18 +584,15 @@ main ol{
     transition: all 2s;
 }
 
-
-.data h1{
-color: #ffffff;
-text-align: center;
-font-size: 50px;
+.grande{
+    font-size: 30px;
 }
 
-.data h1 span{
-color: #39E75F;
-font-size: 100px;
-padding: 10px;
-
+.verde{
+    color: #39E75F;
+    font-size: 100px;
+    padding: 10px;
+    margin-bottom: 100px;
 }
 
 .data h2{
@@ -595,6 +600,15 @@ padding: 10px;
     text-align: center;
 }
 
-.data h2 span{
-    font-size: 30px;
+.querParticipar{
+    width: 100%;
+    height: 100vh;
+}
+
+.querParticipar h1{
+    margin-bottom: 55px;
+}
+
+.data{
+    height: 50%;
 }
