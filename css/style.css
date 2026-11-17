@@ -104,11 +104,16 @@ header img {
     margin-right: 5px;
 }
 
-#btnAside:hover {
+.btnAside:hover {
     background-color: #b4acac;
     transition: all 0.5s ease;
     cursor: pointer;   
 }
+
+.btnAside.aberto{
+    
+}
+
 .bar {
     background-color: #070707;
     width: 100%;
@@ -119,10 +124,10 @@ aside {
     position: fixed;
     top: 0;
     right: 0;
-    width: 280px;
+    width: 330px;
     height: 100vh;
     background: #080D09;
-    border-left: 3px solid #39E75F;
+    border-left: 1px solid #39E75F;
     box-shadow: -5px 0 25px rgba(0,0,0,0.6);
     z-index: 2000;
     transform: translateX(100%);
@@ -499,7 +504,7 @@ main ol{
     border-radius: 20px;
     border: #000000 solid;
     width: 100%;
-    height: 200vh;
+    height: 142vh;
     text-align: center;
 }
 

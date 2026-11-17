@@ -32,6 +32,7 @@ const links = document.querySelectorAll("nav a");
 }
 
 btnAside.addEventListener("click", () => {
+  btnAside.classList.add("aberto");
   activeAside = true;
   toggleAside();
 });
