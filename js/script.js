@@ -29,6 +29,7 @@ const btnCloseAside = document.getElementById("btnCloseAside");
 }
 
 btnAside.addEventListener("click", () => {
+  btnAside.classList.add("aberto");
   activeAside = true;
   toggleAside();
 });
