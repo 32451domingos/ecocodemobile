@@ -241,9 +241,9 @@ nav a:hover {
 .hero h1 {
     white-space: nowrap;
     position: absolute;
-    top: 30px;
-    color: black;
-    font-size: 70px;
+    top: 80px;
+    color: rgb(255, 255, 255);
+    font-size: 140px;
     margin-bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
@@ -256,17 +256,18 @@ nav a:hover {
     transform: translateX(-50%);
     opacity: 0;
     visibility: hidden;
-    color: black;
-    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 56px;
     margin-bottom: 25px;
     transition: all 0.3s ease;
+     white-space: nowrap;
 }
 .hero .fundo{
     position: absolute;
 
-    background-color: rgba(241, 234, 234, 0.5);
-    width: 550px;
-    height: 200px;
+    background-color: rgba(85, 85, 85, 0.374);
+    width: 1000px;
+    height: 500px;
     border-radius: 30px;
 }
 

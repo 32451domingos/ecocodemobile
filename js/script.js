@@ -14,6 +14,9 @@ window.addEventListener("scroll", () => {
 const btnAside = document.getElementById("btnAside");
 const aside = document.getElementById("aside");
 const btnCloseAside = document.getElementById("btnCloseAside");
+const fundoAside =document.getElementById("fundoAside");
+const sections = document.querySelectorAll("section");
+const links = document.querySelectorAll("nav a");
 
  let activeAside = false;
 
@@ -38,12 +41,42 @@ btnCloseAside.addEventListener("click", () => {
   toggleAside();
 });
 
+fundoAside.addEventListener("click", () =>{
+    document.getElementById("fundoAside").style.display = "none ";
+    aside.classList.remove("aberto");
+})
+
+window.addEventListener("scroll", () => {
+
+    let current = "";
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+
+        if (window.scrollY >= sectionTop - 200) {
+            current = section.getAttribute("id");
+        }
+    });
+
+    links.forEach(link => {
+        link.classList.remove("active");
+
+        if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("active");
+        }
+    });
+});
+
+
+
+
 const cookies = document.getElementById("cookies");
 const btnAcceptCookies = document.getElementById("btnAcceptCookies");
 const btnDeclineCookies = document.getElementById("btnDeclineCookies");
 const fundoCookies = document.getElementById("fundoCookies");
 const cookieAceito = document.getElementById("cookieAceito");
 const cookieNegado = document.getElementById("cookieNegado");
+
 
 
 let aceitouCookies = false;
@@ -99,3 +132,4 @@ function rotacaotxt(){
 }
 
 setInterval(rotacaotxt,5000);
+
