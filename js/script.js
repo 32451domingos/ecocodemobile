@@ -15,7 +15,7 @@ const btnAside = document.getElementById("btnAside");
 const aside = document.getElementById("aside");
 const btnCloseAside = document.getElementById("btnCloseAside");
 const fundoAside =document.getElementById("fundoAside");
-const sections = document.querySelectorAll("section");
+const sections = document.querySelectorAll(".hero, .comoParticipar, .quadrado, .querParticipar, .footer" );
 const links = document.querySelectorAll("nav a");
 
  let activeAside = false;
@@ -47,17 +47,54 @@ fundoAside.addEventListener("click", () =>{
     aside.classList.remove("aberto");
 })
 
+
 window.addEventListener("scroll", () => {
 
     let current = "";
 
     sections.forEach(section => {
-        const sectionTop = section.offsetTop;
 
-        if (window.scrollY >= sectionTop - 200) {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+
+        if (window.scrollY >= sectionTop - 200 &&
+            window.scrollY < sectionTop + sectionHeight) {
+
             current = section.getAttribute("id");
         }
     });
+
+    links.forEach(link => {
+
+        link.classList.remove("active");
+
+        if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("active");
+        }
+
+    });
+
+});
+
+
+window.addEventListener("scroll", () => {
+
+    let current = "";
+
+    // Verifica se chegámos ao fim da página
+    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 10) {
+        current = "contacto";
+    } else {
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+
+            if (window.scrollY >= sectionTop - 200) {
+                current = section.getAttribute("id");
+            }
+        });
+
+    }
 
     links.forEach(link => {
         link.classList.remove("active");
@@ -66,8 +103,8 @@ window.addEventListener("scroll", () => {
             link.classList.add("active");
         }
     });
-});
 
+});
 
 
 
