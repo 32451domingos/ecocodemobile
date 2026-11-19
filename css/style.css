@@ -384,7 +384,7 @@ main h1{
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 20px;
-    margin-top: 20px;
+    
     border-top: 2px solid #39E75F;
 }
 
@@ -624,7 +624,44 @@ main ol{
     color: #39E75F;
     font-size: 100px;
     padding: 10px;
-    margin-bottom: 100px;
+    
+}
+
+.querParticipar {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+ 
+}
+
+.querParticipar h1 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.data {
+    width: 80%;
+    max-width: 700px;
+    min-height: 450px;
+    border: 2px solid #39E75F;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0);
+    box-shadow: 0 0 30px rgba(57, 231, 95, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.95),
+        rgba(57, 231, 95, 0.5)
+    );
 }
 
 .data h2{
@@ -632,15 +669,35 @@ main ol{
     text-align: center;
 }
 
-.querParticipar{
-    width: 100%;
-    height: 100vh;
+.textoParticipar {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
-.querParticipar h1{
-    margin-bottom: 55px;
+.data h2 {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
 }
 
-.data{
-    height: 50%;
+.data h3 {
+    color: white;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.grande {
+    color: #39E75F;
+    font-size: 35px;
+}
+
+.localParticipar {
+    color: white;
+    font-size: 18px;
+    margin-top: 40px;
+    text-align: center;
 }
