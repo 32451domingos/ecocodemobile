@@ -756,44 +756,41 @@ main ol{
     text-align: center;
 }
 
-.comoPreparar {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 80px 20px;
+
+.box{
+    width: 50%;
+    height: 100vh;
+    background-color: #ffffff;
 }
 
-.comoPreparar p {
+.comoPreparar{
+    flex: 2;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
 }
 
-.textoPreparar{
-    width: 65%;
-    height: auto;
-    font-size: 22px;
-    line-height: 40px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.direita{
+    flex: 4;
 }
 
-
-.quadradopreparar{
-    background-color: rgb(0, 0, 0);
-    border-radius: 20px;
-    width: 100%;
-    height: 142vh;
-    text-align: center;
+.direita1{
+    height: 20%;
+    font-size: 30px;
+    background-color: #000000;
     color: white;
+    margin: 20px;
+    border-radius: 50px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+   
+}
+
+.direita p{
+    align-items: center;
+    transform: translateY(-40%);
+}
+
+.direita1 span{
+    color: #39E75F;
+    font-size: 45px;
 }
