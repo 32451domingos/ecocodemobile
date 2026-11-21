@@ -15,7 +15,7 @@ const btnAside = document.getElementById("btnAside");
 const aside = document.getElementById("aside");
 const btnCloseAside = document.getElementById("btnCloseAside");
 const fundoAside =document.getElementById("fundoAside");
-const sections = document.querySelectorAll(".hero, .comoParticipar, .quadrado, .querParticipar, .footer" );
+const sections = document.querySelectorAll(".hero, .comoParticipar, .quadrado, .querParticipar,.comoPreparar, .footer" );
 const links = document.querySelectorAll("nav a");
 
  let activeAside = false;
