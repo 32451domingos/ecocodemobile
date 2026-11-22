@@ -771,7 +771,7 @@ main ol{
 }
 
 .esquerda h2{
-    font-size: 200%;
+    font-size: 3vh;
     color: #39E75F;
 }
 
@@ -804,8 +804,8 @@ main ol{
     align-items: center;
     transform: translateY(-40%);
     margin: 0;
-    font-size: 33px;
-     position: absolute;
+    font-size: 3vh;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -813,7 +813,7 @@ main ol{
 
 .direita1 span{
     color: #39E75F;
-    font-size: 55px;
+    font-size: 11vh;
     font-weight: bold;
     position: absolute;
     top: 50%;
