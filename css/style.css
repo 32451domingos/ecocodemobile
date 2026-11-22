@@ -22,16 +22,16 @@ body{
     padding: 8px;
     display: flex;
     justify-content: space-between;
-    width: 70%;
-    height: 100px;
+    width: 141vh;
+    height: 18vh;
     padding:  0 50px;
     transition: height 0.5s ease, width 2s ease;
-    z-index: 1000;
+    z-index: 1980;
     box-sizing: border-box;
     border: 4px solid #39E75F;
     border-bottom: 4px solid #39E75F;
     box-shadow: -2px 0 5px rgba(255, 255, 255, 0.5);
-    border-radius: 35px;
+    border-radius: 4vh;
     align-items: center;
     left: 50%;
     transform: translateX(-50%);
@@ -48,8 +48,8 @@ body{
 
 }
 
-h1{
-    font-size: 30px;
+header h1{
+    font-size: 4vh;
     transition: font-size 0.5s ease;
 
 }
@@ -75,7 +75,7 @@ a{
 }
 
 header img {
-    width: 60px;
+    width: 16vh;
     height: auto;
     transition: width 0.5s ease, height 0.5s ease;
     }
@@ -110,10 +110,6 @@ header img {
     cursor: pointer;   
 }
 
-.btnAside.aberto{
-    
-}
-
 .bar {
     background-color: #070707;
     width: 100%;
@@ -124,7 +120,7 @@ aside {
     position: fixed;
     top: 0;
     right: 0;
-    width: 330px;
+    width: 57vh;
     height: 100vh;
     background: #080D09;
     border-left: 1px solid #39E75F;
@@ -156,15 +152,15 @@ aside.aberto {
 
 .btnCloseAside {
     position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 35px;
-    height: 35px;
+    top: 2vh;
+    right: 3vh;
+    width: 5vh;
+    height: 5vh;
     background: #183D24;
     color: #39E75F;
     border: 1px solid #39E75F;
-    border-radius: 8px;
-    font-size: 20px;
+    border-radius: 1vh;
+    font-size: 3vh;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -179,9 +175,9 @@ aside.aberto {
 
 .nav-titulo {
     color: #39E75F;
-    font-size: 13px;
+    font-size: 2vh;
     letter-spacing: 4px;
-    margin: 35px 20px 30px;
+    margin: 4vh 2vh;
     font-weight: bold;
 }
 
@@ -208,12 +204,11 @@ nav a {
     width: 100%;
     padding: 16px 20px;
     margin: 0;
-
     color: #d1d5d1;
-    font-size: 16px;
+    font-size: 3vh;
     font-weight: 600;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 2vh;
     border-left: 4px solid transparent;
     transition: all 0.3s ease;
 }
@@ -221,7 +216,7 @@ nav a {
 nav a:hover {
     background: #183D24;
     color: #39E75F;
-    border-left: 4px solid #39E75F;
+    border-left: 1vh solid #39E75F;
     padding-left: 28px;
     box-shadow: 0 3px 12px rgba(57, 231, 95, 0.12);
 }
@@ -229,7 +224,7 @@ nav a:hover {
 nav a.active {
     background: #183D24;
     color: #39E75F;
-    border-left: 4px solid #39E75F;
+    border-left: 1vh solid #39E75F;
     padding-left: 28px;
     box-shadow: 0 3px 12px rgba(57, 231, 95, 0.12);
 }
@@ -254,15 +249,15 @@ nav a.active {
 .hero h1 {
     white-space: nowrap;
     position: absolute;
-    top: 80px;
+    top: 14vh;
     color: rgb(255, 255, 255);
-    font-size: 140px;
+    font-size: 14vh;
     margin-bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
 }
 .hero h2 {
-    top: 60%;
+    top: 32vh;
     position: absolute;
     bottom: 10;
     left: 50%;
@@ -270,7 +265,7 @@ nav a.active {
     opacity: 0;
     visibility: hidden;
     color: rgb(255, 255, 255);
-    font-size: 56px;
+    font-size: 4vh;
     margin-bottom: 25px;
     transition: all 0.3s ease;
      white-space: nowrap;
@@ -279,9 +274,9 @@ nav a.active {
     position: absolute;
 
     background-color: rgba(85, 85, 85, 0.374);
-    width: 1000px;
-    height: 500px;
-    border-radius: 30px;
+    width: 107vh;
+    height: 49vh;
+    border-radius: 6vh  ;
 }
 
 .hero h2.aparecer{
@@ -310,7 +305,7 @@ main {
 
 .comoParticipar{
     width: 100%;
-    height: 100vh;
+    height: 120vh;
 }
 
 .passos {
@@ -320,29 +315,29 @@ main {
     gap: 20px;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 23vh;
     position: relative;
 }
 
 
 .passo{
     position: relative;
-    width: 370px;
-    height: 370px;
+    width: 58vh;
+    height: 54vh;
     background: black;
     border-radius: 40px;
-    border: #39E75F solid 4px;
+    border: #39E75F solid 1vh;
     position: relative;
     overflow: hidden;
 }
 
 .numero{
     position: absolute;
-    top: 15px;
-    left: 25px;
+    top: 2vh;
+    left: 5vh;
     background: #39E75F;
-    width: 85px;
-    height: 55px;
+    width: 13vh;
+    height: 11vh;
     border-radius: 15px;
     text-align: center;
     padding-right: 10px;
@@ -357,7 +352,7 @@ main h1{
     color: white;
     text-align: center;
     margin-bottom: 20px;
-    font-size: 50px;
+    font-size: 8vh;
     margin-top: 87px;
 }
 
@@ -385,10 +380,9 @@ main h1{
 .passo h1{
     color: white;
     text-align: left;
-    left: 120px;
-    top: 10px;
-    margin-bottom: 20px;
-    font-size: 200%;
+    left: 16vh;
+    top: 1vh;
+    font-size: 5vh;
     margin-top: 10px;
     margin-left: 20px;
     z-index: 1000;
@@ -399,7 +393,7 @@ main h1{
 .passo p{
     color: white;
     text-align: left;
-    font-size: 156%;
+    font-size: 4vh;
     margin-bottom: 0%;
     margin-top: 0;
     margin-left: 6%;
@@ -584,17 +578,17 @@ main ol{
 .quadro h2{
     color: white;
     font-size: 25px;
-    padding-top: 150px;
-    padding-bottom: 20px;
+    padding-top: 15vh;
+    padding-bottom: 5vh;
     font-weight: bold;
 
 }
 
 .quadro p{
     color: white;
-    font-size: 20px;
+    font-size: 2vh;
     margin: 10px 70px;
-    margin-top: 40px;
+    margin-top: 0;
 }
 
 .quadro{
@@ -606,7 +600,7 @@ main ol{
     box-shadow: -2px 0 5px rgba(5, 5, 5, 0.5);
     transition: all ;
     margin-bottom: 20px;
-    height: 400px;
+    height: 40vh;
 }
 
 .quadro.colunaA{
@@ -630,10 +624,10 @@ main ol{
 
 .quadro span{
     position: absolute;
-    font-size: 90px;
+    font-size: 10vh;
     left: 50%;
     transform: translateX(-50%);
-    top: 10px;
+    top: 2vh;
 }
 
 .btnTopo{
@@ -806,7 +800,7 @@ main ol{
     position: absolute;
     bottom: 0;
     right: 50%;
-    font-size: 100px;
+    font-size: 8vh;
     color: white;
     transition: all 3s ease;
     cursor: pointer;
@@ -821,4 +815,8 @@ main ol{
 .seta.desaparecer{
     opacity: 0;
     transition: opacity 1s ease;
+}
+
+.FAQ{
+    height: 100vh;
 }
