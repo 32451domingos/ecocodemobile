@@ -479,6 +479,7 @@ main h1{
     border-radius: 8px;
     box-shadow: -2px 0 5px rgba(245, 245, 245, 0.5);
     border: 2px solid #39E75F;
+    padding: 20px 100px;
 }
 
 .cookies.fechado{
@@ -650,6 +651,7 @@ main ol{
     border: 2px solid #39E75F;
     color: black;
     transition: all 2s;
+    padding: 0 5px 14px 5px;
 }
 
 .btnTopo.aparecer{
@@ -658,9 +660,14 @@ main ol{
 } 
 
 .btnTopo:hover{
-    padding: 15px 10px;
-    background-color: #b4acac;
-    transition: all 2s;
+    background-color: black;
+    color: white;
+    transition: all .5s;
+}
+
+.btnTopo span{
+    font-size: 50px;
+    transition: all 1s ease;
 }
 
 .grande{
@@ -804,3 +811,24 @@ main ol{
     font-size: 300%
 }
 
+
+.seta{
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    font-size: 100px;
+    color: white;
+    transition: all 3s ease;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.seta.cima{
+    bottom: 30px;
+    transition: all 1s ease;
+}
+
+.seta.desaparecer{
+    opacity: 0;
+    transition: opacity 1s ease;
+}

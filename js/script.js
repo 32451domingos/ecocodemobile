@@ -6,9 +6,11 @@ window.addEventListener("scroll", () => {
   if (window.scrollY > 50) {
     btnTopo.classList.add("aparecer")
     header.classList.add("pequeno");
+    seta.classList.add("desaparecer")
   } else {
     header.classList.remove("pequeno");
     btnTopo.classList.remove("aparecer")
+    seta.classList.remove("desaparecer")
   }
 });
 const btnAside = document.getElementById("btnAside");
@@ -171,3 +173,17 @@ function rotacaotxt(){
 
 setInterval(rotacaotxt,5000);
 
+const seta = document.getElementById("seta");
+let cima = true;
+
+function cimabaixo(){
+  if(cima){
+    seta.classList.remove("cima");
+    cima=false;
+  }
+  else{
+    seta.classList.add("cima");
+    cima=true;
+  }
+};
+setInterval(cimabaixo,3000)
