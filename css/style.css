@@ -782,7 +782,9 @@ main ol{
     text-align: center;
     justify-content: center;
     display: flex;
-   
+   box-sizing: border-box;
+    border: 4px solid #39E75F;
+    border-bottom: 4px solid #39E75F;
 }
 
 .direita p{
@@ -794,3 +796,11 @@ main ol{
     color: #39E75F;
     font-size: 45px;
 }
+
+.box h2{
+    text-align: center;
+    justify-content: center;
+    padding-top: 40%;
+    font-size: 300%
+}
+
