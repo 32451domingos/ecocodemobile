@@ -17,7 +17,7 @@ const btnAside = document.getElementById("btnAside");
 const aside = document.getElementById("aside");
 const btnCloseAside = document.getElementById("btnCloseAside");
 const fundoAside =document.getElementById("fundoAside");
-const sections = document.querySelectorAll(".hero, .comoParticipar, .quadrado, .querParticipar,.comoPreparar, .footer" );
+const sections = document.querySelectorAll(".hero, .comoParticipar, .quadrado, .querParticipar,.comoPreparar, .perguntas ,.footer" );
 const links = document.querySelectorAll("nav a");
 
  let activeAside = false;
@@ -83,7 +83,6 @@ window.addEventListener("scroll", () => {
 
     let current = "";
 
-    // Verifica se chegámos ao fim da página
     if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 10) {
         current = "contacto";
     } else {
