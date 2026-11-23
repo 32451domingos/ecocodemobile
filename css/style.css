@@ -920,7 +920,7 @@ main ol{
         left: 0;
         width: 100%;
         transform: translateX(0);
-        border-radius: 0vh;
+        border-radius: 5vh;
     }
 
 
